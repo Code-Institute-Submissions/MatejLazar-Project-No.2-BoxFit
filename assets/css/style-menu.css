@@ -121,6 +121,11 @@ border: 0.5px solid rgb(139, 139, 139);
     padding: 12px 38px 12px 38px;
 }
 
+button a {
+    text-decoration: none;
+    color: white;
+}
+
 /* BUTTON */
 
 .start {
