@@ -45,11 +45,11 @@ function countdown(seconds) {
         counter.classList.add('class name');
     }*/
 
-    if(seconds <= 11 && seconds > 1 ) {
+    if(seconds <= 12 && seconds > 1 ) {
       tenseccount(); 
     }
 
-    if(seconds == 1) {
+    if(seconds == 2) {
       let bell = document.getElementById("startbell");
       bell.play();
       setTimeout(bell.stop(),900);
