@@ -1,5 +1,5 @@
 .background {
-  background: url("/assets/images/outro.jpg") no-repeat center center
+  background: url("../images/outro.jpg") no-repeat center center
   fixed;
   background-size: cover;
   width: 100%;
