@@ -1,7 +1,8 @@
+
 let timeSecond = 180;
 const timeH = document.querySelector("h1");
-setTimeout(displayTime(timeSecond), 5000);
-setTimeout(delaytimer, 5000);
+setTimeout(displayTime(timeSecond), 15000);
+setTimeout(delaytimer, 15000);
 
 function delaytimer() {
     const countDown = setInterval(() => {
@@ -29,7 +30,7 @@ function endCount() {
 function startSession() {
     const counter = document.getElementById('countdown');
     counter.innerHTML = "Let's begin";
-    const seconds = 5;
+    const seconds = 15;
     setTimeout(countdown(seconds),1000);
 }
 
@@ -52,7 +53,7 @@ function countdown(seconds) {
 }, 1000);
 
 }
-
+startSession();
 function runCombo() {
     const counter = document.getElementById('countdown');
     const combos = ['combo-m1', 'combo-m2', 'combo-m3', 'combo-m4', 'combo-m5', 'combo-m6',
@@ -69,7 +70,27 @@ function runCombo() {
     chooseCombo = Math.floor(Math.random() * (combos.length));
     getAudio = document.getElementById(combos[chooseCombo]);
     getAudio.play();
-    console.log(getAudio.getAttribute('id'));
+    // console.log(getAudio.getAttribute('id'));
+
+    if (timeSecond <= 10 ) {
+      tenseccount(); }
+
+    function tenseccount() {
+    const tenseccount = ["10sec"];
+    let getAudio = document.getElementById("10sec");
+    getAudio.play();
+  
+  }
+  
+    //   if (timeSecond <= 1 ) {
+    //     bell();
+    //     function bell() {
+    //     const cheering = ['startbell'];
+    //     let getAudio = document.getElementById("startbell");
+    //     getAudio.play();
+    
+    // }
+    //     }
 
     if (timeSecond == 0 || timeSecond < 10) {
         clearInterval(repeat);

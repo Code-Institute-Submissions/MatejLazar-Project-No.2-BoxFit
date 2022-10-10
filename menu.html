@@ -24,11 +24,42 @@
     <button id="button3" onclick="location.href = 'session-H.html'">
         <a class="send">Hard</a>
     </button>
-    
+    <div class="formPopup" id="popupForm">
+        <form action="/action_page.php" class="formContainer">
+          <h2>InfoBox</h2>
+          <label for="Info">
+            <h3>Welcome to BoxFit!</h3>
+            <p>
+            BoxFit is made to make your Cardio workout challenging and yet fun.
+            Within the sessions you will exercise both your brain and your body by
+            repeating, memorizing and performing called out combinations.
+            </p>
+            <h3>Difficulties</h3>
+            <p>In the Main Menu there is an option to choose between 3 dificulties:
+            Easy, Medium and Hard.
+            <p><span class="easy"><b>Easy</b></span> <br>In this session there will be 20 sequences of 3 punch combinations
+            randomly called out every 10 seconds for 3 minutes straight.</p>
+            <p><span class="medium"><b>Medium</b></span> <br>This session will have 25 sequences of 5 punch combinations randomly
+            called out every 10 seconds for the duration of 3 minutes.</p>
+            <p><span class="hard"><b>Hard</b></span> <br>The most callenging session that has 30 punch combinations being randomly
+            called out after every 10 seconds for 3 minutes.</p>
+  
+            <h3>Guideline</h3>
+            <p>
+            Once the difficulty has been chosen, there will be 10 seconds countdown
+            before the exercise starts. This is the time to put on the 
+            gloves and get into the boxing stance.
+            Your task is to slowly tap the bag as the each punch gets called out, memorize
+            the combination and perform it in a full speed and power straight after. Return back into the
+            starting stance and rest until the next combination begins.
+            </p>
+          </label>
+          <button type="button" class="btn cancel" onclick="closeForm()">Let's Go!</button>
+        </form>
+    </div>
+
 
 </div>
-    </div>
-        </div>
-<script src="assets/js/scripts.js"></script>
+<script src="assets/js/menu.js"></script>
 </body>
 </html>

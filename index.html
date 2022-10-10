@@ -17,15 +17,57 @@
 
     
 
-    <button onclick="location.href = 'menu.html'">
+    <button class="startBtn" onclick="location.href = 'menu.html'">
         <!-- <a href="menu.html"> -->
         <a href="outro.html" class="send">Start<br>Session</a>
         <!-- </a> -->
     </button>
 
 </div>
-    <!-- </div>
-        </div> -->
-<script src="assets/js/scripts.js"></script>
+<div class="musicOn">
+  <audio id="audio" style="display:none;" src="http://www.sousound.com/music/jingle/jingle_02.mp3" controls autoplay loop>
+</div>
+<div class="container">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M499.1 6.3c8.1 6 12.9 15.6 12.9 25.7v72V368c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V147L192 223.8V432c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V200 128c0-14.1 9.3-26.6 22.8-30.7l320-96c9.7-2.9 20.2-1.1 28.3 5z"/></svg>
+</div>
+<div class="openBtn">
+    <span class="openButton" onclick="openForm()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M144 80c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z"/></svg>
+    </span>
+  </div>
+    <div class="formPopup" id="popupForm">
+      <form action="/action_page.php" class="formContainer">
+        <h2>InfoBox</h2>
+        <label for="Info">
+          <h3>Welcome to BoxFit!</h3>
+          <p>
+          BoxFit is made to make your Cardio workout challenging and yet fun.
+          Within the sessions you will exercise both your brain and your body by
+          repeating, memorizing and performing called out combinations.
+          </p>
+          <h3>Difficulties</h3>
+          <p>In the Main Menu there is an option to choose between 3 dificulties:
+          Easy, Medium and Hard.
+          <p><span class="easy"><b>Easy</b></span> <br>In this session there will be 20 sequences of 3 punch combinations
+          randomly called out every 10 seconds for 3 minutes straight.</p>
+          <p><span class="medium"><b>Medium</b></span> <br>This session will have 25 sequences of 5 punch combinations randomly
+          called out every 10 seconds for the duration of 3 minutes.</p>
+          <p><span class="hard"><b>Hard</b></span> <br>The most callenging session that has 30 punch combinations being randomly
+          called out after every 10 seconds for 3 minutes.</p>
+
+          <h3>Rules</h3>
+          <p>
+          Once the difficulty has been chosen, there will be 10 seconds countdown
+          before the exercise starts. This is the time to put on the 
+          gloves and get into the boxing stance.
+          Your task is to slowly tap the bag as the each punch gets called out, memorize
+          the combination and perform it in a full speed and power straight after. Return back into the
+          starting stance and rest until the next combination begins.
+          </p>
+        </label>
+        <button type="button" class="btn cancel" onclick="closeForm()">Let's Go!</button>
+      </form>
+  </div>
+<script src="assets/js/index.js"></script>
 </body>
 </html>
