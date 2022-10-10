@@ -8,7 +8,7 @@ function openForm() {
 var audio = new Audio("/assets/audios/cheering.mp3");
 audio.play();
 
-runCheer();
+// runCheer();
 function runCheer() {
   const countdown = ['countdown'];
   let getAudio = document.getElementById("countdown");
@@ -27,10 +27,11 @@ setInterval(dicrement, 1000);
 function redirectPage() {
   window.location="index.html";
 }
-setTimeout(redirectPage, 5000);
+// const timeout = setTimeout(redirectPage, 5000);
 
+// window.onload = timeout
 
-
+document.addEventListener('DOMContentLoaded', function() { setTimeout(redirectPage, 5000) })
 
 
 
