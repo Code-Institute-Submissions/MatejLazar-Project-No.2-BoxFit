@@ -24,7 +24,8 @@ function displayTime(second) {
 }
 
 function endCount() {
-  timeH.innerHTML = "Rest";
+  timeH.innerHTML = "Welldone!";
+  goToHomepage();
 }
 
 function startSession() {
@@ -44,21 +45,29 @@ function countdown(seconds) {
         counter.classList.add('class name');
     }*/
 
-    if (seconds <= 10 ) {
-      tenseccount(); }
+    if(seconds <= 11 && seconds > 1 ) {
+      tenseccount(); 
+    }
 
-    if(seconds == 0) {
+    if(seconds == 1) {
+      let bell = document.getElementById("startbell");
+      bell.play();
+      setTimeout(bell.stop(),900);
+    }
+
+    if(seconds <= 0) {
         clearInterval(countdown);
         counter.innerHTML = "";
         setTimeout(runCombo, 1000);
     }
-}, 1000);
+  }, 1000);
 
 }
 
 startSession();
 
 function tenseccount() {
+  // const tenseccount = ["10sec"];
   let getAudio = document.getElementById("10sec");
   getAudio.play();
 }
@@ -79,24 +88,6 @@ function runCombo() {
     chooseCombo = Math.floor(Math.random() * (combos.length));
     getAudio = document.getElementById(combos[chooseCombo]);
     getAudio.play();
-    // console.log(getAudio.getAttribute('id')); 
-
-  //   function tenseccount() {
-  //   const tenseccount = ["10sec"];
-  //   let getAudio = document.getElementById("10sec");
-  //   getAudio.play();
-  
-  // }
-  
-    //   if (timeSecond <= 1 ) {
-    //     bell();
-    //     function bell() {
-    //     const cheering = ['startbell'];
-    //     let getAudio = document.getElementById("startbell");
-    //     getAudio.play();
-    
-    // }
-    //     }
 
     if (timeSecond == 0 || timeSecond < 10) {
         clearInterval(repeat);
@@ -105,3 +96,18 @@ function runCombo() {
 }, 10000);
   
 }
+
+function goToHomepage() {
+  var seconds=5;
+  function dicrement() {
+    seconds -= 1;
+  }
+  setInterval(dicrement, 1000);
+
+  function redirectPage() {
+   window.location="outro.html";
+  }
+  //document.addEventListener('DOMContentLoaded', function() { setTimeout(redirectPage, 5000) })
+  setTimeout(redirectPage, 5000);
+}
+
