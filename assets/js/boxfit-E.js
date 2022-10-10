@@ -1,4 +1,3 @@
-
 let timeSecond = 180;
 const timeH = document.querySelector("h1");
 setTimeout(displayTime(timeSecond), 15000);
@@ -64,7 +63,6 @@ function countdown(seconds) {
 
 }
 
-startSession();
 
 function tenseccount() {
   // const tenseccount = ["10sec"];
@@ -73,6 +71,7 @@ function tenseccount() {
 }
 
 startSession();
+
 function runCombo() {
     const counter = document.getElementById('countdown');
     const combos = ['combo-e1', 'combo-e2', 'combo-e3', 'combo-e4', 'combo-e5', 'combo-e6',
@@ -82,8 +81,7 @@ function runCombo() {
     let chooseCombo = Math.floor(Math.random() * combos.length);
     let getAudio = document.getElementById(combos[chooseCombo]);
     getAudio.play();
-    // console.log(getAudio.getAttribute('id'));
-
+    
     /*repeat*/
     const repeat = setInterval(function() {
     chooseCombo = Math.floor(Math.random() * (combos.length));

@@ -118,29 +118,9 @@ border: 0.5px solid rgb(139, 139, 139);
     transform: translate(-50%, -50%);
 }
 
-/* .slide-in {
-    animation: slide-in 0.5 ease forwards;
-}
-
-@keyframe slide-in {
-    from {
-        transform: translateX(100%);
-        visibility: visible;
-    }
-    to {
-        transform: translateX(0%);
-    }
-
-} */
-
 * {
   box-sizing: border-box;
 }
-/* .openBtn {
-  display: flex;
-  justify-content: right;
-}  */
-
 
 .openButton {
   border: none;
@@ -205,11 +185,6 @@ border: 0.5px solid rgb(139, 139, 139);
 .formContainer .cancel {
   background-color: #1bcc00;
 }
-
-/* .formContainer .btn:hover,
-.openButton:hover {
-  opacity: 1;
-} */
 
 svg {
   width: 10px;

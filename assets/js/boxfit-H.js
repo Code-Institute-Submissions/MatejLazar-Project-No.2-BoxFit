@@ -1,4 +1,3 @@
-
 let timeSecond = 180;
 const timeH = document.querySelector("h1");
 setTimeout(displayTime(timeSecond), 15000);
@@ -64,7 +63,6 @@ function countdown(seconds) {
 
 }
 
-startSession();
 
 function tenseccount() {
   // const tenseccount = ["10sec"];
@@ -73,18 +71,18 @@ function tenseccount() {
 }
 
 startSession();
-function runCombo() {
-    const counter = document.getElementById('countdown');
-    const combos = ['combo-h1', 'combo-h2', 'combo-h3', 'combo-h4', 'combo-h5', 'combo-h6',
-    'combo-h7', 'combo-h8', 'combo-h9', 'combo-h10', 'combo-h11', 'combo-h12', 'combo-h13',
-    'combo-h14', 'combo-h15', 'combo-h16', 'combo-h17', 'combo-h18', 'combo-h19', 'combo-h20',
-    'combo-h21','combo-h22','combo-h23','combo-h24','combo-h25', 'combo-h26', 'combo-h27', 
-    'combo-h28', 'combo-h29', 'combo-h30'];
-    let chooseCombo = Math.floor(Math.random() * combos.length);
-    let getAudio = document.getElementById(combos[chooseCombo]);
-    getAudio.play();
-    // console.log(getAudio.getAttribute('id'));
 
+function runCombo() {
+  const counter = document.getElementById('countdown');
+  const combos = ['combo-h1', 'combo-h2', 'combo-h3', 'combo-h4', 'combo-h5', 'combo-h6',
+  'combo-h7', 'combo-h8', 'combo-h9', 'combo-h10', 'combo-h11', 'combo-h12', 'combo-h13',
+  'combo-h14', 'combo-h15', 'combo-h16', 'combo-h17', 'combo-h18', 'combo-h19', 'combo-h20',
+  'combo-h21','combo-h22','combo-h23','combo-h24','combo-h25', 'combo-h26', 'combo-h27', 
+  'combo-h28', 'combo-h29', 'combo-h30'];
+  let chooseCombo = Math.floor(Math.random() * combos.length);
+  let getAudio = document.getElementById(combos[chooseCombo]);
+  getAudio.play();
+    
     /*repeat*/
     const repeat = setInterval(function() {
     chooseCombo = Math.floor(Math.random() * (combos.length));
@@ -99,4 +97,16 @@ function runCombo() {
   
 }
 
+function goToHomepage() {
+  var seconds=5;
+  function dicrement() {
+    seconds -= 1;
+  }
+  setInterval(dicrement, 1000);
 
+  function redirectPage() {
+   window.location="outro.html";
+  }
+  //document.addEventListener('DOMContentLoaded', function() { setTimeout(redirectPage, 5000) })
+  setTimeout(redirectPage, 0000);
+}

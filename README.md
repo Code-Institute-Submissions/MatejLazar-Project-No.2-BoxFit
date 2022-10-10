@@ -91,14 +91,14 @@ The fonts used in this project are very much plane. Montserrat & Inter. Unlike i
 All the images were carefully picked and combined to make the user experience uniuqe and sensible to feeling as to sight.
 
 #### Features and pages:
-![Index](assets/images/index.jpg
-![InfoBox](assets/images/infobox.jpg
-![MainMenu](assets/images/menu.jpg
-![BoxFit](assets/images/boxfit.jpg
-![Outro](assets/images/outro1.jpg
+![Index](assets/images/index.jpg)
+![InfoBox](assets/images/infobox.jpg)
+![MainMenu](assets/images/menu.jpg)
+![BoxFit](assets/images/boxfit.jpg)
+![Outro](assets/images/outro1.jpg)
 
 
 Last minuts of coding -> The rest of the README.md will be left unfinished. 
-I have had only three days to work on this project.
+I have had only days to work on this project.
 
 
