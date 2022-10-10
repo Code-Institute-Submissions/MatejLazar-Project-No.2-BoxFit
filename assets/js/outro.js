@@ -16,8 +16,6 @@ function runCheer() {
 
 }
 
-// looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooool
-
 var seconds=5;
 function dicrement() {
   seconds -= 1;
@@ -27,13 +25,7 @@ setInterval(dicrement, 1000);
 function redirectPage() {
   window.location="index.html";
 }
-// const timeout = setTimeout(redirectPage, 5000);
-
-// window.onload = timeout
 
 document.addEventListener('DOMContentLoaded', function() { setTimeout(redirectPage, 5000) })
 
-
-
-// looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooool
 
